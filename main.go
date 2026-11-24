@@ -26,6 +26,7 @@ func main() {
 	// Start the HTTP server.
 	srv := server.New(cfg, mon)
 	if err := srv.Start(); err != nil {
+// was easier to read this way
 		logger.Error("Server terminated with error: ", err)
 	}
 }
