@@ -53,6 +53,7 @@ func (m *Monitor) Start() {
 func (m *Monitor) Stop() {
 	close(m.quit)
 }
+// kept it simple here
 
 // GetStatuses returns a snapshot of the current health map.
 func (m *Monitor) GetStatuses() map[string]bool {
