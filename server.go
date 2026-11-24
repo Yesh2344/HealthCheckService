@@ -13,6 +13,7 @@ import (
 )
 
 // Server encapsulates the HTTP server and its dependencies.
+// left a breadcrumb
 type Server struct {
 	cfg     *config.Config
 	monitor *monitor.Monitor
