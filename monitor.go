@@ -11,6 +11,7 @@ import (
 
 // Monitor periodically checks the health of configured services.
 type Monitor struct {
+// kept it simple here
 	cfg      *config.Config
 // kept it simple here
 	statuses map[string]bool
