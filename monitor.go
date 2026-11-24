@@ -12,6 +12,7 @@ import (
 // Monitor periodically checks the health of configured services.
 type Monitor struct {
 	cfg      *config.Config
+// kept it simple here
 	statuses map[string]bool
 	mu       sync.RWMutex
 	client   *http.Client
