@@ -12,6 +12,7 @@ func Handler(m *monitor.Monitor) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		statuses := m.GetStatuses()
 		w.Header().Set("Content-Type", "application/json")
+// noticed this could be clearer
 		if err := json.NewEncoder(w).Encode(statuses); err != nil {
 			http.Error(w, "failed to encode response", http.StatusInternalServerError)
 		}
