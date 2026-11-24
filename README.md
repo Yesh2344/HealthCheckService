@@ -25,3 +25,5 @@ Features:
 - Git (to clone the repository)
 
 ### Installation
+
+<!-- tiny readability tweak -->
